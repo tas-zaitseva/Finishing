@@ -1,0 +1,17 @@
+.headline {
+  padding-top: rem(83px);
+  display: flex;
+  justify-content: center;
+}
+
+.headline__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+
+.headline__title {
+  font-size: rem(64px);
+}

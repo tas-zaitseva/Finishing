@@ -1,0 +1,109 @@
+.price__table {
+  line-height: 1.5;
+  border-collapse: collapse;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 25%));
+
+  @include tablets {
+    grid-template-columns: 1fr;
+    row-gap: rem(16px);
+  }
+
+  thead, tbody, tr {
+    display: contents;
+  }
+
+  thead {
+    @include tablets {
+      display: none;
+    }
+  }
+
+  th {
+    font-weight: 600;
+    text-align: left;
+    background: $lithest-grey;
+    border-top: 1px solid $lighter-grey;
+    border-bottom: 1px solid $lighter-grey;
+    padding: rem(15px) rem(16px);
+  }
+
+  th:first-child {
+    padding-left: rem(31px);
+  }
+
+  th:last-child {
+    padding-right: rem(31px);
+  }
+  
+  tr {
+    @include tablets {
+      border-top: 1px solid $lighter-grey;
+    }
+
+    td:first-child {
+      padding-left: rem(31px);
+
+      @include tablets {
+        padding-left: rem(120px);
+      }
+    }
+    
+    td:last-child {
+      padding-right: rem(31px);
+
+      @include tablets {
+        padding-right: rem(16px);
+      }
+    }
+    
+    @include tablets {
+      display: block;
+    }
+  }
+
+  td {
+    padding: rem(11px) rem(16px);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $lighter-grey;
+
+    @include tablets {
+      padding-left: rem(120px);
+      justify-content: flex-start;
+      position: relative;
+    }
+  }
+
+  td::before {
+    @include tablets {
+      content:attr(data-label);
+      height: 100%;
+      font-weight: 600;
+      background: $lithest-grey;
+      position: absolute;
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      min-width: rem(109px);
+      padding-left: rem(15px);
+      padding-right: rem(15px);
+      top: 0;
+      left: 0;
+    }
+  }
+  
+  td:last-child {
+    column-gap: rem(10px);
+    justify-content: space-between;
+
+    @include tablets {
+      justify-content: flex-start;
+
+      .button {
+        margin-left: auto;
+      }
+    }
+  }
+}

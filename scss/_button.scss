@@ -1,0 +1,15 @@
+.button {
+  font-size: rem(14px);
+  font-weight: 600;
+  color: $blue;
+  background-color: rgba($color: #0066CC, $alpha: 0.1);
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: color .3s, background-color .3s;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  color: white;
+  background-color: $blue;
+}

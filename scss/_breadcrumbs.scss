@@ -1,0 +1,24 @@
+.breadcrumbs {
+  font-size: rem(14px);
+  font-weight: 400;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  column-gap: rem(8px);
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  column-gap: rem(8px);
+}
+
+.breadcrumbs__item:not(:first-child):before {
+  content: '';
+  display: block;
+  width: rem(8px);
+  height: rem(16px);
+  background: url(../svg/slash.svg) center center no-repeat;
+  background-size: contain;
+}

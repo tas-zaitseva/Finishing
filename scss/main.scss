@@ -1,0 +1,58 @@
+//fonts 
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+//colors
+$base-black: #1D1D1F;
+$dark-grey: #333333;
+$grey: #58585D;
+$light-grey:#9B9B9E;
+$lighter-grey: #D9D9D9;
+$lithest-grey: #F5F5F7;
+$blue: #0066CC;
+$red: #DC3545;
+
+//sizes 
+$baseFontSize: 16px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//importing files
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+@import 'media';
+
+@import 'layout';
+@import 'header';
+@import 'menu';
+@import 'headline';
+@import 'breadcrumbs';
+@import 'section';
+@import 'price';
+@import 'button';
