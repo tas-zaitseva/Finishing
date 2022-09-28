@@ -1,19 +1,38 @@
 .section {
   padding-top: rem(94px);
   padding-bottom: rem(10px);
+  
+  @include phones {
+    padding-top: 46px;
+    padding-bottom: rem(14px);    
+  }
 }
 
 .section__title {
   margin-bottom: rem(9px);
   font-size: rem(48px);
   line-height: 1.333;
+  
+  @include phones {
+    font-size: rem(40px);
+    margin-bottom: rem(17px);
+    text-align: center;
+  }
 }
 
 .section__subtitle {
   font-size: rem(20px);
   line-height: 1.6;
+  
+  @include phones {
+    font-size: rem(16px);
+  }
 }
 
 .section__headline {
   margin-bottom: rem(55px);
+  
+  @include phones {
+    margin-bottom: rem(42px);    
+  }
 }

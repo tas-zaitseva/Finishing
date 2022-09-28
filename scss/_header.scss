@@ -17,6 +17,10 @@
 
   .menu__link:hover {
     color: $blue;
+
+    @include tablets {
+      color: inherit;
+    }
   }
 }
 

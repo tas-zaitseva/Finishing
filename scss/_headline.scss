@@ -2,6 +2,10 @@
   padding-top: rem(83px);
   display: flex;
   justify-content: center;
+
+  @include phones {
+    padding-top: rem(51px);
+  }
 }
 
 .headline__container {
@@ -9,9 +13,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 15px;
+  row-gap: rem(15px);
+  text-align: center;
+
+  @include phones {
+    row-gap: rem(13px);
+  }
 }
 
 .headline__title {
   font-size: rem(64px);
+
+  @include phones {
+    font-size: rem(48px);
+  }
 }

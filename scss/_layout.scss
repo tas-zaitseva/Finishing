@@ -6,7 +6,7 @@ html {
   font-size: $baseFontSize;
 
   @include phones {
-    font-size: 3.333vmin;
+    font-size: 4.266vmin;
   }
 }
 
@@ -51,4 +51,8 @@ a {
   max-width: 884px;
   width: 95%;
   margin: 0 auto;
+  
+  @include phones {
+    width: 91%;
+  }
 }

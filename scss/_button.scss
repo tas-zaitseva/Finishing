@@ -12,4 +12,9 @@
 .button:hover {
   color: white;
   background-color: $blue;
+  
+  @include tablets {
+    color: $blue;
+    background-color: rgba($color: #0066CC, $alpha: 0.1);
+  }
 }

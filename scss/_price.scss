@@ -68,11 +68,16 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid $lighter-grey;
-
+    
     @include tablets {
       padding-left: rem(120px);
       justify-content: flex-start;
       position: relative;
+    }
+    
+    @include phones {
+      padding-top: rem(15px);
+      padding-bottom: rem(15px);
     }
   }
 
@@ -97,13 +102,19 @@
   td:last-child {
     column-gap: rem(10px);
     justify-content: space-between;
-
+    
     @include tablets {
       justify-content: flex-start;
-
+      
       .button {
         margin-left: auto;
       }
+    }
+    
+    @include phones {
+      padding-top: rem(11px);
+      padding-bottom: rem(11px);
+
     }
   }
 }

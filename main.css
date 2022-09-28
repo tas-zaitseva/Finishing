@@ -33,7 +33,7 @@ html {
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 3.333vmin;
+    font-size: 4.266vmin;
   }
 }
 
@@ -79,6 +79,11 @@ a {
   width: 95%;
   margin: 0 auto;
 }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 91%;
+  }
+}
 
 .header {
   height: 4.5rem;
@@ -106,6 +111,11 @@ a {
 }
 .header__menu .menu__link:hover {
   color: #0066CC;
+}
+@media screen and (max-width: 768px) {
+  .header__menu .menu__link:hover {
+    color: inherit;
+  }
 }
 
 .header__container {
@@ -138,6 +148,11 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  .headline {
+    padding-top: 3.1875rem;
+  }
+}
 
 .headline__container {
   display: -webkit-box;
@@ -153,11 +168,22 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  row-gap: 15px;
+  row-gap: 0.9375rem;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .headline__container {
+    row-gap: 0.8125rem;
+  }
 }
 
 .headline__title {
   font-size: 4rem;
+}
+@media screen and (max-width: 480px) {
+  .headline__title {
+    font-size: 3rem;
+  }
 }
 
 .breadcrumbs {
@@ -199,20 +225,43 @@ a {
   padding-top: 5.875rem;
   padding-bottom: 0.625rem;
 }
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 46px;
+    padding-bottom: 0.875rem;
+  }
+}
 
 .section__title {
   margin-bottom: 0.5625rem;
   font-size: 3rem;
   line-height: 1.333;
 }
+@media screen and (max-width: 480px) {
+  .section__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.0625rem;
+    text-align: center;
+  }
+}
 
 .section__subtitle {
   font-size: 1.25rem;
   line-height: 1.6;
 }
+@media screen and (max-width: 480px) {
+  .section__subtitle {
+    font-size: 1rem;
+  }
+}
 
 .section__headline {
   margin-bottom: 3.4375rem;
+}
+@media screen and (max-width: 480px) {
+  .section__headline {
+    margin-bottom: 2.625rem;
+  }
 }
 
 .price__table {
@@ -300,6 +349,12 @@ a {
     position: relative;
   }
 }
+@media screen and (max-width: 480px) {
+  .price__table td {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.9375rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .price__table td::before {
     content: attr(data-label);
@@ -340,6 +395,12 @@ a {
     margin-left: auto;
   }
 }
+@media screen and (max-width: 480px) {
+  .price__table td:last-child {
+    padding-top: 0.6875rem;
+    padding-bottom: 0.6875rem;
+  }
+}
 
 .button {
   font-size: 0.875rem;
@@ -357,4 +418,10 @@ a {
 .button:hover {
   color: white;
   background-color: #0066CC;
+}
+@media screen and (max-width: 768px) {
+  .button:hover {
+    color: #0066CC;
+    background-color: rgba(0, 102, 204, 0.1);
+  }
 }
