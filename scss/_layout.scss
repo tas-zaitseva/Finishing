@@ -41,6 +41,20 @@ a {
   display: inline-block;
 }
 
+p {
+  margin: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
 .container-outer {
   max-width: 1793px;
   width: 95%;
@@ -53,6 +67,6 @@ a {
   margin: 0 auto;
   
   @include phones {
-    width: 91%;
+    width: 92%;
   }
 }

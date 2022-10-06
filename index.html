@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +24,8 @@
       <div class="container headline__container">
         <nav class="breadcrumbs">
           <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Тестовое задание</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Тестовое задание</a></li>
           </ul>
         </nav>
         <h1 class="headline__title">Тестовое задание</h1>
@@ -90,5 +90,105 @@
       </div>
     </div>
   </section>
+  <section class="section order">
+    <div class="container">
+      <div class="section__headline">
+        <h2 class="section__title">Форма</h2>
+        <div class="section__subtitle">Должна иметь проверку полей: обязательное поле, формат, минимальное значение. При несоответствии должна выводиться соответствующая ошибка. Поле «Телефон» должен содержать маску ввода.</div>
+      </div>
+      <div class="order__form-background">
+        <h3 class="order__form-title">Заказать проект</h3>
+        <form action="POST" id="form" class="order__form form">
+          <div class="form__row">
+            <label class="input">
+              <h5 class="input__title">Название</h5>
+              <input type="text" name="name" class="input__input">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="input range">
+              <h5 class="input__title">Стоимость</h5>
+              <div class="range__container">
+                <input type="text" name="priceInput" class="input__input range__text" min="10000000" max="40000000" step="100000" placeholder="0 ₽">
+                <input type="range" name="priceScale" class="range__scale" min="10000000" max="40000000" step="100000" value="0">
+                <ul class="range__scale-values">
+                  <li class="range__scale-value">10</li>
+                  <li class="range__scale-value">20</li>
+                  <li class="range__scale-value">30</li>
+                  <li class="range__scale-value">40+</li>
+                </ul>
+              </div>
+            </label>
+            <label class="input number">
+              <h5 class="input__title">Площадь</h5>
+              <div class="number__container">
+                <input type="text" name="area" min="100" placeholder="100 м²" class="input__input number__input">
+                <ul class="number__buttons">
+                  <li class="number__button number__button--minus">-</li>
+                  <li class="number__button number__button--plus">+</li>
+                </ul>
+              </div>
+            </label>
+            <label class="input control">
+              <h5 class="input__title">Отделка</h5>
+              <div class="input__inner-block">
+                <input type="checkbox" checked class="input__input control__checkbox hidden">
+                <div class="control__visible">
+                  <div class="control__button"></div>
+                  <div class="control__title">Вайтбокс</div>
+                </div>
+              </div>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="input">
+              <h5 class="input__title">Телефон</h5>
+              <input type="tel" class="input__input" value="+7">
+            </label>
+            <label class="input">
+              <h5 class="input__title">Почта</h5>
+              <input type="email" class="input__input">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="input file">
+              <h5 class="input__title">Приложить файлы</h5>
+              <input type="file" accept=".jpeg" name="upload" class="input__input hidden">
+              <div class="file__visible">
+                <p>Кликните или перенесите файлы в эту область.</p>
+                <p>Только JPG, до 1 Мб</p>
+              </div>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="input select">
+              <h5 class="input__title">Удобства</h5>
+              <select name="facilities" class="input__input select__input">
+                <option value="any">Любые</option>
+                <option value="block">Кирпичный</option>
+                <option value="wooden">Деревянный</option>
+                <option value="monolithic">Монолитный</option>
+                <option value="frame">Каркасный</option>
+                <option value="shield">Щитовой</option>
+              </select>
+            </label>
+            <label class="input">
+              <h5 class="input__title">Пароль</h5>
+              <input type="password" class="input__input">
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="input">
+              <h5 class="input__title">Пожелания</h5>
+              <input type="text" class="input__input" placeholder="укажите через запятую">
+            </label>
+          </div>
+          <button type="submit" id="submit" class="button button--theme-dark button--size-l form__button">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="./js/controls.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 </html>

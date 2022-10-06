@@ -23,10 +23,11 @@
   th {
     font-weight: 600;
     text-align: left;
-    background: $lithest-grey;
+    background: $lightest-grey;
     border-top: 1px solid $lighter-grey;
     border-bottom: 1px solid $lighter-grey;
     padding: rem(15px) rem(16px);
+    color: $base-black;
   }
 
   th:first-child {
@@ -86,7 +87,8 @@
       content:attr(data-label);
       height: 100%;
       font-weight: 600;
-      background: $lithest-grey;
+      background: $lightest-grey;
+      color: $base-black;
       position: absolute;
       display: flex;
       box-sizing: border-box;

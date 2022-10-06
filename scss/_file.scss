@@ -1,0 +1,25 @@
+.file__visible {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23B9B1B1FF' stroke-width='1' stroke-dasharray='8%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: rem(4px);
+  border-image-slice: 1;
+  padding: rem(35px);
+  text-align: center;
+  color: #58585D;
+  cursor: pointer;
+
+  @include phones {
+    padding: rem(20px);
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  p:not(:last-child){
+    margin-bottom: rem(10px);
+
+    @include phones {
+      margin-bottom: 0;
+    }
+  }
+}

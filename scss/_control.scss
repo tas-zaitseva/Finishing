@@ -1,0 +1,66 @@
+.control {
+  flex: 1 1 22%;
+
+  @include tablets {
+    padding-top: rem(24px);
+  }
+  
+  @include tablets {
+    padding-top: 0;
+  }
+
+  @include tablets {
+    flex: 1 1 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  @include phones {
+    justify-content: space-between;
+  }
+}
+
+.control__visible {
+  display: flex;
+  column-gap: rem(10px);
+  align-items: center;
+}
+
+.control__title {
+  user-select: none;
+}
+
+.control__button {
+  width: rem(44px);
+  height: rem(24px);
+  border-radius: rem(12px);
+  background-color: #BABAC2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: background-color .3s;
+}
+
+.control__button::after {
+  content: '';
+  display: block;
+  width: rem(20px);
+  height: rem(20px);
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  left: 50%;
+  transform: translateX(-100%);
+  transition: left .3s, transform .3s;
+}
+
+.control__checkbox:checked + .control__visible {
+  .control__button {
+    background-color: $blue;
+  }
+  
+  .control__button::after {
+    transform: translateX(0);
+  }
+}

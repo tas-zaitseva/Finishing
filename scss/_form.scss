@@ -1,0 +1,42 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(32px);
+  row-gap: rem(22px);
+  margin-bottom: rem(38px);
+
+  @include phones {
+    margin-bottom: rem(22px);
+  }
+}
+
+.form__row:nth-child(2) {
+  row-gap: rem(35px);
+  margin-bottom: rem(63px);
+  
+  @include phones {
+    row-gap: rem(38px);    
+    margin-bottom: rem(32px);
+  }
+}
+
+.form__row:nth-child(6) {
+  margin-bottom: rem(46px);
+
+  @include phones {
+    margin-bottom: rem(32px);
+  }
+}
+
+.form__button {
+  align-self: flex-start;
+
+  @include phones {
+    align-self: center;
+  }
+}

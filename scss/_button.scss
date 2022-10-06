@@ -18,3 +18,20 @@
     background-color: rgba($color: #0066CC, $alpha: 0.1);
   }
 }
+
+.button--theme-dark {
+  background-color: $blue;
+  color: white;
+  transition: color .3s, background-color .3s;
+}
+
+.button--theme-dark:hover {
+  background-color: rgba($color: #0066CC, $alpha: 0.1);
+  color: $blue;
+}
+
+.button--size-l {
+  font-size: rem(16px);
+  line-height: 1.5;
+  padding: rem(16px) rem(28px);
+}

@@ -1,0 +1,39 @@
+.input {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(10px);
+}
+
+.input__inner-block {
+  padding-top: rem(15px);
+  padding-bottom: rem(15px);
+
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.input__input {
+  width: 100%;
+  background: white;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  font-size: rem(16px);
+  line-height: 1.5;
+  padding: rem(15px);
+  caret-color: $blue;
+}
+
+.input__title {
+  font-size: rem(16px);
+  line-height: 1.5;
+}
+
+.input__input:focus {
+  border: 1px solid $blue;
+}
+
+.input__input.hidden {
+  display: none;
+}
