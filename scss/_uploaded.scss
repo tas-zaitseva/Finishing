@@ -1,0 +1,30 @@
+.uploaded {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(8px);
+}
+
+.uploaded__file {
+  display: flex;
+  align-items: center;
+}
+
+.uploaded__display {
+  display: flex;
+  align-items: center;
+  column-gap: rem(8px);
+}
+
+.uploaded__button {
+  width: rem(16px);
+  height: rem(16px);
+}
+
+.uploaded__pic {
+  color: $blue;
+}
+
+.uploaded__name {
+  color: $grey;
+  line-height: 1.5;
+}

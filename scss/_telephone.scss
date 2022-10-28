@@ -1,0 +1,17 @@
+.telephone {
+  position: relative;
+}
+
+.telephone::after {
+  content: '';
+  display: block;
+  width: rem(24px);
+  height: rem(24px);
+  background: url(../svg/check.svg) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: rem(16px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}

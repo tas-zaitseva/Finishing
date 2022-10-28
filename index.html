@@ -143,7 +143,7 @@
           <div class="form__row">
             <label class="input">
               <h5 class="input__title">Телефон</h5>
-              <input type="tel" class="input__input" value="+7">
+              <input type="tel" name="tel" class="input__input telephone" >
             </label>
             <label class="input">
               <h5 class="input__title">Почта</h5>
@@ -153,11 +153,13 @@
           <div class="form__row">
             <label class="input file">
               <h5 class="input__title">Приложить файлы</h5>
-              <input type="file" accept=".jpeg" name="upload" class="input__input hidden">
+              <input type="file" multiple accept=".jpeg,.jpg" name="upload" class="input__input hidden">
               <div class="file__visible">
                 <p>Кликните или перенесите файлы в эту область.</p>
                 <p>Только JPG, до 1 Мб</p>
               </div>
+              <ul class="file__uploaded uploaded">
+              </ul>
             </label>
           </div>
           <div class="form__row">
@@ -188,7 +190,11 @@
       </div>
     </div>
   </section>
-  <script src="./js/controls.js"></script>
+  <script src="./node_modules/cleave.js/dist/cleave.min.js"></script>
+  <script src="./js/range.js"></script>
+  <script src="./js/area.js"></script>
+  <script src="./js/tel.js"></script>
+  <script src="./js/file.js"></script>
   <script src="./js/form.js"></script>
 </body>
 </html>
